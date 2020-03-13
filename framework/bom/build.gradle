@@ -1,0 +1,10 @@
+plugins {
+	id 'java-platform'
+	id 'maven-publish'
+}
+
+dependencies {
+	constraints {
+		api project(":core")
+	}
+}
