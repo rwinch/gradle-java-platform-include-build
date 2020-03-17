@@ -1,0 +1,13 @@
+plugins {
+	id 'java'
+}
+
+dependencies {
+	compile "sample.java-platform:bom:0.0.1-SNAPSHOT@pom"
+}
+
+tasks.register("resolveBom") {
+	doFirst {
+		println project.configurations.compile.resolve()
+	}
+}
