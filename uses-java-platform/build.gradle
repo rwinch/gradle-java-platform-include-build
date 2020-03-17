@@ -3,7 +3,8 @@ plugins {
 }
 
 dependencies {
-	compile "sample.java-platform:bom:0.0.1-SNAPSHOT@pom"
+	compile platform("sample.java-platform:bom:0.0.1-SNAPSHOT")
+	compile "sample.java-platform:core"
 }
 
 tasks.register("resolveBom") {
